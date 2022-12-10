@@ -1,0 +1,110 @@
+/* previous page and next page  */
+.gg-arrow-long-right,
+.gg-arrow-long-left {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(0.6, 0.7);
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    box-shadow: inset 0 0 0 2px;
+    width: 24px;
+    height: 6px
+}
+
+.gg-arrow-long-right {
+    margin-left: 0.5625em;
+}
+
+.gg-arrow-long-left {
+    margin-right: 0.5625em;
+}
+
+.gg-arrow-long-right::after,
+.gg-arrow-long-left::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    transform: rotate(45deg);
+    bottom: -2px
+}
+
+.gg-arrow-long-right::after {
+    border-top: 2px solid;
+    border-right: 2px solid;
+    right: 0;
+}
+
+.gg-arrow-long-left::after {
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+    left: 0;
+
+}
+
+/* menu hamburger  and close cross */
+.toggle-menu-btn {
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+}
+
+.gg-menu {
+    transform: scale(2)
+}
+
+.gg-menu,
+.gg-menu::after,
+.gg-menu::before {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 3px;
+    background: currentColor
+}
+
+.gg-menu::after,
+.gg-menu::before {
+    content: "";
+    position: absolute;
+    top: -6px
+}
+
+.gg-menu::after {
+    top: 6px
+}
+
+.gg-close {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(2);
+    width: 22px;
+    height: 22px;
+    border: 2px solid transparent;
+    border-radius: 40px
+}
+
+.gg-close::after,
+.gg-close::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 16px;
+    height: 2px;
+    background: currentColor;
+    transform: rotate(45deg);
+    border-radius: 5px;
+    top: 8px;
+    left: 1px
+}
+
+.gg-close::after {
+    transform: rotate(-45deg)
+}

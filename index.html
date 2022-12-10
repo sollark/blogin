@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/icons.css" />
+    <title>Title</title>
+  </head>
+  <body class="main-layout" onload="onInit()">
+    <!-- screen when menu opened  -->
+    <div class="main-screen" onclick="toggleMenu()"></div>
+
+    <!-- header -->
+    <header class="main-header">
+      <div class="header-wrapper flex align-center space-between">
+        <div class="logo">Blogin<span>.</span></div>
+
+        <!-- navigation  -->
+        <nav class="main-nav">
+          <ul class="clean-list flex">
+            <li><a class="active" href="#">Journal</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="toggle-menu-btn" onclick="toggleMenu(this.children)">
+          <i class="gg-menu"></i>
+          <i class="gg-close hidden"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- main  -->
+    <main class="main-content">
+      <section class="card">
+        <img class="card-image" src="assets/img/" alt="image" />
+        <article class="card-article">
+          <h1 class="card-title">
+            Duis aute irure dolor in henderit in voluptate.
+          </h1>
+          <p>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia
+            deserunt mollit anim id est laborum.
+            <br />
+            <br />
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur...
+          </p>
+          <button class="card-button">Continue Reading</button>
+        </article>
+      </section>
+    </main>
+
+    <!-- page navigation  -->
+    <div class="page-nav-bar flex space-between">
+      <div class="btn btn-previous place-items-center">
+        <!-- <img src="assets/icons/bx-left-arrow-alt.png" /> -->
+        <i class="gg-arrow-long-left"></i>
+        Previous
+      </div>
+      <div class="btn btn-next place-items-center">
+        Next
+        <!-- <img src="assets/icons/bx-right-arrow-alt.png" /> -->
+        <i class="gg-arrow-long-right"></i>
+      </div>
+    </div>
+
+    <!-- footer  -->
+    <footer class="main-footer place-items-center">
+      <div class="footer-container flex flex-column align-center">
+        <div class="logo">Blogin<span>.</span></div>
+        <small>
+          © 2014 Blogin.com - All Rights Reserved - Find more free Templates at
+
+          <a href="http://pixelhint.com/">Pixelhint.com</a>
+        </small>
+        <div class="social-media">
+          <ul class="social-links flex clean-list">
+            <li>
+              <a href="https://www.facebook.com/"> </a>
+              <img src="assets/social media/facebook.png" />
+            </li>
+            <li>
+              <a href="https://twitter.com/"> </a>
+              <img src="assets/social media/twitter.png" />
+            </li>
+            <li>
+              <a href="https://www.youtube.com"> </a>
+              <img src="assets/social media/youtube.png" />
+            </li>
+            <li>
+              <a href="https://www.instagram.com/"> </a>
+              <img src="assets/social media/instagram.png" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/utils.js"></script>
+    <script src="js/services/dummy.posts.js"></script>
+    <script src="js/services/storage.service.js"></script>
+    <script src="js/services/post.service.js"></script>
+    <script src="js/post.controller.js"></script>
+    <script src="js/main.controller.js"></script>
+  </body>
+</html>
