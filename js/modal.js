@@ -31,5 +31,5 @@ elModal.addEventListener('close', () => {
   document.body.style.height = 'initial';
 
   const email = elModal.querySelector('input').value;
-  console.log('elFormInputs:', email);
+  console.log('mail:', email);
 });
