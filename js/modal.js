@@ -21,14 +21,14 @@ function closeModal() {
   elModal.close(this);
 
   // enable scrolling
-  document.body.style.overflow = 'auto';
-  document.body.style.height = 'auto';
+  document.body.style.overflow = 'initial';
+  document.body.style.height = 'initial';
 }
 
 // when modal closed, it send here form submit values
 elModal.addEventListener('close', () => {
-  document.body.style.overflow = 'auto';
-  document.body.style.height = 'auto';
+  document.body.style.overflow = 'initial';
+  document.body.style.height = 'initial';
 
   console.log('Submitted value: "' + elModal.returnValue + '"');
 
