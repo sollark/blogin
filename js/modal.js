@@ -30,8 +30,6 @@ elModal.addEventListener('close', () => {
   document.body.style.overflow = 'initial';
   document.body.style.height = 'initial';
 
-  console.log('Submitted value: "' + elModal.returnValue + '"');
-
   const email = elModal.querySelector('input').value;
   console.log('elFormInputs:', email);
 });
