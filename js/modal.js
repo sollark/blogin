@@ -27,6 +27,9 @@ function closeModal() {
 
 // when modal closed, it send here form submit values
 elModal.addEventListener('close', () => {
+  document.body.style.overflow = 'auto';
+  document.body.style.height = 'auto';
+
   console.log('Submitted value: "' + elModal.returnValue + '"');
 
   const email = elModal.querySelector('input').value;
