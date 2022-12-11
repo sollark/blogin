@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style/icons.css" />
     <title>Blogin</title>
   </head>
-  <body class="main-layout" onload="onInit()">
+  <body onload="onInit()">
     <!-- screen when menu opened  -->
     <div class="main-screen" onclick="toggleMenu()"></div>
 
@@ -38,7 +38,7 @@
     <main class="main-content">
       <section class="card">
         <img class="card-image" src="assets/img/" alt="image" />
-        <article class="card-article">
+        <article class="card-article flex flex-column">
           <h1 class="card-title">
             Duis aute irure dolor in henderit in voluptate.
           </h1>
@@ -51,7 +51,7 @@
             Duis aute irure dolor in reprehenderit in voluptate velit esse
             cillum dolore eu fugiat nulla pariatur...
           </p>
-          <button class="card-button">Continue Reading</button>
+          <button class="card-button .btn--style">Continue Reading</button>
         </article>
       </section>
     </main>
@@ -69,6 +69,22 @@
         <i class="gg-arrow-long-right"></i>
       </div>
     </div>
+
+    <!-- modal  -->
+    <dialog class="modal">
+      <button class="modal__closeIcon">X</button>
+
+      <p class="modal__text">Join us to get access to the latest stories!</p>
+      <form method="dialog">
+        <label> Email <input type="email" name="email" /></label>
+
+        <!-- options for buttons -->
+        <div class="modal__btns">
+          <button class="btn--style" value="cancel">Cancel</button>
+          <button class="btn--style" value="confirm">Confirm</button>
+        </div>
+      </form>
+    </dialog>
 
     <!-- footer  -->
     <footer class="main-footer place-items-center">
@@ -106,6 +122,7 @@
     <script src="js/services/dummy.posts.js"></script>
     <script src="js/services/storage.service.js"></script>
     <script src="js/services/post.service.js"></script>
+    <script src="js/modal.js"></script>
     <script src="js/post.controller.js"></script>
     <script src="js/main.controller.js"></script>
   </body>
